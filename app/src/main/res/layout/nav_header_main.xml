@@ -13,12 +13,14 @@
         android:orientation="vertical"
         android:gravity="bottom">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:paddingTop="5dp"
-            app:srcCompat="@mipmap/avatar"
-            android:id="@+id/imageView"/>
+            android:src="@mipmap/avatar"
+            android:id="@+id/imageView"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#ffffff"/>
 
     <TextView
             android:layout_width="match_parent"
