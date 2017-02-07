@@ -164,13 +164,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            AwesomeWebViewActivity.launch(this, null, "https://github.com/zhonghanwen");
+            loadUrl("http://www.cnblogs.com/common1140/");
         } else if (id == R.id.nav_gallery) {
-            AwesomeWebViewActivity.launch(this, null, "http://www.cnblogs.com/common1140/");
+            loadUrl("https://github.com/zhonghanwen");
         } else if (id == R.id.nav_slideshow) {
-            AwesomeWebViewActivity.launch(this, null, "http://zhonghanwen.xyz/");
+            loadUrl("http://zhonghanwen.xyz/");
         } else if (id == R.id.nav_manage) {
-            AwesomeWebViewActivity.launch(this, null, "http://www.jianshu.com/u/774672153679");
+            loadUrl("http://www.jianshu.com/u/774672153679");
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
