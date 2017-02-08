@@ -27,7 +27,7 @@ git *Cherry-Pick*命令可以选择某一个分支中的一个或几个commit(s)
 
 查看dev分支的Log可以看到那个提交已合并到dev。
 
-    ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/7.png)
+   ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/7.png)
 
 ### Note
 当你需要将某些提交合并到另一分支的时候，**一定一定一定**要按提交的顺序进行合并，不然会导致某些文件发生冲突。这也是我实际项目中踩过的坑。
