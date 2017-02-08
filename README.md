@@ -12,15 +12,15 @@ git *Cherry-Pick*命令可以选择某一个分支中的一个或几个commit(s)
 
 现在需要将master分支下的git Log commit "修改侧栏的点击跳转方式"合并到dev分支。也许你可能想到将这个Log上面的Logs先Revert，然后再将master分支合并到dev分支。下面记录一下怎么使用*Cherry-Pick*来合并一个或者多个提交。
 
-1. 先将当前分支切换到dev分支。
+- 先将当前分支切换到dev分支。
 
 ![切换到dev分支](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/4.png)
 
-2. 打开master的所有提交Log,找到需要合并到dev分支的提交，这里我们找到“修改侧栏的点击跳转方式”这个提交，然后点击右击选择菜单弹出*Cherry-Pick*命令。
+- 打开master的所有提交Log,找到需要合并到dev分支的提交，这里我们找到“修改侧栏的点击跳转方式”这个提交，然后点击右击选择菜单弹出*Cherry-Pick*命令。
 
 ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/8.png)
 
-3. 接着，IDE会弹出熟悉的提交提示框架，这时我们点击*Commit*或者*Commit and Push...*就可以将需要合并的提交合并到dev分支了。
+- 接着，IDE会弹出熟悉的提交提示框架，这时我们点击*Commit*或者*Commit and Push...*就可以将需要合并的提交合并到dev分支了。
 这里我选择了*Commit and Push...*。
 
 ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/6.png)
