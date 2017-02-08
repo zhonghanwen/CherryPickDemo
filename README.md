@@ -14,28 +14,28 @@ git *Cherry-Pick*命令可以选择某一个分支中的一个或几个commit(s)
 
 - 先将当前分支切换到dev分支。
 
-![切换到dev分支](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/4.png)
+    ![切换到dev分支](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/4.png)
 
 - 打开master的所有提交Log,找到需要合并到dev分支的提交，这里我们找到“修改侧栏的点击跳转方式”这个提交，然后点击右击选择菜单弹出*Cherry-Pick*命令。
 
-![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/8.png)
+    ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/8.png)
 
 - 接着，IDE会弹出熟悉的提交提示框架，这时我们点击*Commit*或者*Commit and Push...*就可以将需要合并的提交合并到dev分支了。
 这里我选择了*Commit and Push...*。
 
-![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/6.png)
+    ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/6.png)
 
 查看dev分支的Log可以看到那个提交已合并到dev。
 
-![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/7.png)
+    ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/7.png)
 
 ### Note
 当你需要将某些提交合并到另一分支的时候，**一定一定一定**要按提交的顺序进行合并，不然会导致某些文件发生冲突。这也是我实际项目中踩过的坑。
 
 ### End
-1.当你的需求还没有完成的时候，其他人应该切换到另一分支开发的时候，你可以先在当前分支继续开发完，然后再选择*Cherry-Pick*命令合并过去就可以了。
-2.当你需要将某个人的commits合并到另一开分时候，可以选择*Cherry-Pick*命令。（在实际的项目开发中，在所难免有人会提交错分支）
-3.当你切换到某条分支修改Bug后，需要将修改提交合并另一分支，可以选择*Cherry-Pick*命令。
+1. 当你的需求还没有完成的时候，其他人应该切换到另一分支开发的时候，你可以先在当前分支继续开发完，然后再选择*Cherry-Pick*命令合并过去就可以了。
+2. 当你需要将某个人的commits合并到另一开分时候，可以选择*Cherry-Pick*命令。（在实际的项目开发中，在所难免有人会提交错分支）
+3. 当你切换到某条分支修改Bug后，需要将修改提交合并另一分支，可以选择*Cherry-Pick*命令。
 
 ---
 这是一个非常好用、有趣的命令，它提高了我的开发效率~~在此，分享给大伙，希望可以帮忙到更多的人！
