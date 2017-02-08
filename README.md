@@ -1,4 +1,3 @@
-# CherryPickDemo
 > 在实际的项目开发中（使用Git版本控制），在所难免会遇到没有切换分支开发、需要在另一个分支修改bug然后合并到当前分支的情况。之前遇到这种第一反应就是将分支合并过去来解决问题。如果你那些提交当中也穿插了其他人的提交而且他们的提交不可以合并到另一个分支，那么使用分支的合并将明显变得困难。下面分享给大家一个非常好用Git的命令*Cherry-Pick*来处理这些情况，从而提高开发的效率。
 
 ### What is *Cherry-Pick* ?
@@ -23,8 +22,11 @@ git *Cherry-Pick*命令可以选择某一个分支中的一个或几个commit(s)
 
 3. 接着，IDE会弹出熟悉的提交提示框架，这时我们点击*Commit*或者*Commit and Push...*就可以将需要合并的提交合并到dev分支了。
 这里我选择了*Commit and Push...*。
+
 ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/6.png)
+
 查看dev分支的Log可以看到那个提交已合并到dev。
+
 ![](http://7xrnko.com1.z0.glb.clouddn.com/git-cherry-pick/7.png)
 
 ### Note
